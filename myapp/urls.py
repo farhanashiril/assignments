@@ -3,12 +3,9 @@ from django.urls import path,include
 from . import views
 
 urlpatterns = [
-    path('',views.fn1,name='1'),
-    path('2',views.fn2,name='2'),
-    path('3',views.fn3,name='3'),
-    path('a',views.assignment1,name="a"),
-    path('b',views.assignment2,name="b"),
-    path('c',views.assignment3,name="c"),
-    path('d',views.assignment4,name="d"),
-    path('e',views.form,name="e")
+    path('ass1',views.assignment1,name="ass1"),
+    path('ass2',views.assignment2,name="ass2"),
+    path('ass3',views.assignment3,name="ass3"),
+    path('ass4',views.assignment4,name="ass4"),
+    path('form',views.form,name="form")
 ]
