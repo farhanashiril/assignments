@@ -19,3 +19,5 @@ def assignment4(request):
      return render(request,'assignment4.html')  
 def form(request):
     return render(request,'form.html')
+def bootstrap(request):
+    return render(request,'bootstrap.html') 
