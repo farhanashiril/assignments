@@ -7,6 +7,7 @@ urlpatterns = [
     path('ass2',views.assignment2,name="ass2"),
     path('ass3',views.assignment3,name="ass3"),
     path('ass4',views.assignment4,name="ass4"),
-    path('form',views.form,name="form"),
-    path('bs',views.bootstrap,name="bs")
+    path('ass5',views.assignment5,name="ass5"),
+    path('ass6',views.assignment6,name="ass6"),
+    path('bss',views.bs,name="bss")
 ]

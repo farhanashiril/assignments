@@ -17,7 +17,9 @@ def assignment3(request):
     return render(request,'assignment3.html')    
 def assignment4(request):
      return render(request,'assignment4.html')  
-def form(request):
-    return render(request,'form.html')
-def bootstrap(request):
-    return render(request,'bootstrap.html') 
+def assignment5(request):
+    return render(request,'assignment5.html')
+def assignment6(request):
+    return render(request,'assignment6.html')
+def bs(request):
+    return render(request,'bs.html')
