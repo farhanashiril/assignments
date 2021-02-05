@@ -9,5 +9,6 @@ urlpatterns = [
     path('ass4',views.assignment4,name="ass4"),
     path('ass5',views.assignment5,name="ass5"),
     path('ass6',views.assignment6,name="ass6"),
-    path('bss',views.bs,name="bss")
+    path('fb',views.fb,name="fb"),
+    path('ass7',views.assignment7,name="ass7")
 ]

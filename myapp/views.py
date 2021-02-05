@@ -21,5 +21,7 @@ def assignment5(request):
     return render(request,'assignment5.html')
 def assignment6(request):
     return render(request,'assignment6.html')
-def bs(request):
-    return render(request,'bs.html')
+def fb(request):
+    return render(request,'fb.html')
+def assignment7(request):
+    return render(request,'assignment7.html')    

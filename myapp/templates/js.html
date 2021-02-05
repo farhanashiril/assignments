@@ -1,6 +1,21 @@
 <html>
 
 <head>
+    <script>
+        function fnTest() {
+            myArray = [1, 2, 3];
+            // for (a = 0; a < myArray.length; a++) {
+            // document.write(myArray[a] + "<br>")
+            // }
+            // }
+            a = 0;
+            while (a < myArray.length) {
+                document.write(myArray[a] + "<br>");
+                a += 1;
+            }
+        }
+        fnTest();
+    </script>
 
 
 </head>
@@ -8,27 +23,7 @@
 
 <body>
 
-    <input type="text" id="username" placeholder="enter Username">
-    <input type="text" id="password" placeholder="enter password">
-    <button onclick="LoginFun()">login</button>
-    <p id="res"></p>
 
-    <script>
-        function LoginFun() {
-            username = document.getElementById('username').value
-            password = document.getElementById('password').value
-
-            if ((username == 'user') && (password = '123')) {
-                document.getElementById('res').innerHTML = "login success";
-            } else {
-                document.getElementById('res').innerHTML = "incorrect username or password";
-
-            }
-
-
-
-        }
-    </script>
 
 
 </body>
