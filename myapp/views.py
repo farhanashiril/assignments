@@ -24,4 +24,6 @@ def assignment6(request):
 def fb(request):
     return render(request,'fb.html')
 def assignment7(request):
-    return render(request,'assignment7.html')    
+    return render(request,'bulb.html') 
+def calculator(request):
+    return render(request,'calc.html')       

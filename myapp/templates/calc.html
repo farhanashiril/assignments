@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+    <style>
+        table {
+            border: 1px solid;
+        }
+        
+        button {
+            width: 100;
+            border: none;
+        }
+        
+        input {
+            height: 20px;
+            width: 100%;
+            border: none;
+            padding: 5px;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" align="center" width="200">
+        <tr>
+            <td colspan="4">
+                <input type="text" id="disp" readonly>
+
+            </td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="setvalue(7)">7</button></td>
+            <td><button type="button" onclick="setvalue(8)">8</button></td>
+            <td><button type="button" onclick="setvalue(9)">9</button></td>
+            <td><button type="button" onclick="Op('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="setvalue(4)">4</button></td>
+            <td><button type="button" onclick="setvalue(5)">5</button></td>
+            <td><button type="button" onclick="setvalue(6)">6</button></td>
+            <td><button type="button" onclick="Op('x')">x</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="setvalue(1)">1</button></td>
+            <td><button type="button" onclick="setvalue(2)">2</button></td>
+            <td><button type="button" onclick="setvalue(3)">3</button></td>
+            <td><button type="button" onclick="Op('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="setvalue(0)">0</button></td>
+            <td><button type="button" onclick="setvalue('.')">.</button></td>
+            <td><button type="button" onclick="Result()">=</button></td>
+            <td><button type="button" onclick="Op('+')">+</button></td>
+        </tr>
+    </table>
+    <script>
+        function setvalue(valu) {
+            document.getElementById('disp').value += valu
+
+        }
+
+        function Op(Op) {
+            rem = Number(document.getElementById('disp').value);
+            document.getElementById('disp').value = "";
+            opn = Op;
+
+        }
+
+        function Result() {
+            c_rem = Number(document.getElementById('disp').value);
+            if (opn == '+') {
+                document.getElementById('disp').value = rem + c_rem;
+            } else if (opn == '-') {
+                document.getElementById('disp').value = rem - c_rem;
+
+            } else if (opn == 'x') {
+                document.getElementById('disp').value = rem * c_rem;
+
+            } else if (opn == '/') {
+                document.getElementById('disp').value = rem / c_rem;
+            }
+        }
+    </script>
+</body>
+
+</html>

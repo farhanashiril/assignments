@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <img id="img" src="{% static 'pic_bulboff.gif' %}" alt="">
+    <button onclick="Fnon()">on</button>
+    <button onclick="Fnoff()">off</button>
+    <script>
+        function Fnon() {
+            document.getElementById("img").src = "{% static 'pic_bulbon.gif' %}"
+        }
+
+
+        function Fnoff() {
+            document.getElementById('img').src = "{% static 'pic_bulboff.gif' %}"
+
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,31 +1,36 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <script>
-        function fnTest() {
-            myArray = [1, 2, 3];
-            // for (a = 0; a < myArray.length; a++) {
-            // document.write(myArray[a] + "<br>")
-            // }
-            // }
-            a = 0;
-            while (a < myArray.length) {
-                document.write(myArray[a] + "<br>");
-                a += 1;
-            }
-        }
-        fnTest();
-    </script>
-
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
+<input type="text" placeholder="enter items" id="item">
+<button onclick="addlist()">ADD</button>
+<div id="div"></div>
 
 <body>
+    <script>
+        names = Array();
+        count = 0;
 
+        function addlist() {
+            names[count] = document.getElementById('item').value;
+            count += 1;
+            document.getElementById('item').value = "";
+            Displaylist()
+        }
 
-
-
+        function Displaylist() {
+            var d = "";
+            for (i = 0; i < names.length; i++) {
+                d += names[i] + "<br>";
+            }
+            document.getElementById('div').innerHTML = d
+        }
+    </script>
 </body>
 
 </html>
