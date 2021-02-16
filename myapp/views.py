@@ -23,7 +23,7 @@ def assignment6(request):
     return render(request,'assignment6.html')
 def fb(request):
     return render(request,'fb.html')
-def assignment7(request):
+def bulb(request):
     return render(request,'bulb.html') 
 def calculator(request):
     return render(request,'calc.html')       

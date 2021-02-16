@@ -10,6 +10,6 @@ urlpatterns = [
     path('ass5',views.assignment5,name="ass5"),
     path('ass6',views.assignment6,name="ass6"),
     path('fb',views.fb,name="fb"),
-    path('bulb',views.assignment7,name="bulb"),
-    path('calc',views.assignment7,name="calc")
+    path('bulb',views.bulb,name="bulb"),
+    path('calc',views.calculator,name="calc")
 ]
